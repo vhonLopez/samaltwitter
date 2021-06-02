@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @count = params["count"]
+    @time = Time.now
+    
   end
+
+  def about; end
 end
