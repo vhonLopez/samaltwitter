@@ -1,3 +1,26 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+html {
+  background-color: #f0f2f5;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.create-post-container {
+  background-color: white;
+  padding: 16px 32px;
+  text-align: right;
+  textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
+  }
+
+  button {
+    border: none;
+    background-color: aqua;
+    padding: 10px 15px;
+  }
+}
