@@ -2,6 +2,11 @@ html {
   background-color: #f0f2f5;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   width: 750px;
   margin: 0 auto;
@@ -9,7 +14,7 @@ html {
 
 .create-post-container {
   background-color: white;
-  padding: 16px 32px;
+  padding: 24px 32px;
   text-align: right;
   textarea {
     display: block;
@@ -23,4 +28,10 @@ html {
     background-color: aqua;
     padding: 10px 15px;
   }
+}
+
+.post {
+  margin-top: 12px;
+  background-color: white;
+  padding: 16px 32px;
 }
