@@ -2,21 +2,16 @@ class TodosController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    page = params[:page]
-    if page.to_i < 1
-      render json: { error: { message: 'Page is not valid' } }, status: 422
-      return
-    end
-
-    render json: { message: 'this is index' }
+    render json: { message: 'Success', todos: Todo.all }
   end
 
   def my_todos
-    render json: { message: 'this is my todos' }
+    render json: { message: 'this is my_todos' }
   end
 
   def show
-    render json: { message: 'this is show' }
+    todo = Todo.find(params[:id])
+    render json: { message: 'Success', todo: todo }
   end
 
   def create
